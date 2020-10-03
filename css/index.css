@@ -1,26 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet');
 
-.logo {
+:root {
+    --main-color:black; /*загальний колір*/
+}
+/* .logo {
     display: flex;
     justify-content: flex-start;
-}
-.namecolor {
+} */
+.header-nav .namecolor {
     color: black;
     font-size: 28px;
     font-family: 'Lato', sans-serif;
+   
 }
-.cv {
+.header-nav .cv {
     color: red;
     font-size: 28px;
     font-family: 'Lato', sans-serif;
 }
 
-.menu {
+.header-nav .menu-items {
     display: flex;
     justify-content: space-around;
         
     flex-direction: row; 
     cursor: pointer;
     font-size: 15px;
+    text-decoration: none;
+}
 
+.header-nav .menu-items a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-family: 'Lato', sans-serif;
 }
