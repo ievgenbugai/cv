@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet');
 
+@media (min-width: 992px) {
+    .header-nav {
+        display: flex;
+        align-items: center;
+        padding: 0 40px;
+    }
+}
+
+
 :root {
     --main-color:black; /*загальний колір*/
 }
@@ -7,11 +16,20 @@
     display: flex;
     justify-content: flex-start;
 } */
+
+.header-nav {
+    /* display: flex; */
+    flex-direction: row;
+    /* -webkit-box-pack: justify; */
+    justify-content: space-between
+    
+    
+}
 .header-nav .namecolor {
     color: black;
     font-size: 28px;
     font-family: 'Lato', sans-serif;
-   
+     
 }
 .header-nav .cv {
     color: red;
@@ -22,7 +40,7 @@
 .header-nav .menu-items {
     display: flex;
     justify-content: space-around;
-        
+      
     flex-direction: row; 
     cursor: pointer;
     font-size: 15px;
@@ -33,4 +51,48 @@
     text-decoration: none;
     color: var(--main-color);
     font-family: 'Lato', sans-serif;
+    padding: 16px;
+    border: 2px solid transparent; /*щоб не стрибали букви*/
+}
+.header-nav .menu-items a:hover {
+    border: 2px solid;
+    border-bottom-color: yellow;
+
+}
+.block {
+    padding-top: 80px;
+    padding-bottom: 130px;
+    font-family: 'Lato', sans-serif;
+}
+
+.block .transparentPng {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.block .myPhoto {
+    transform: translateZ(0px);
+    object-fit: cover;
+    object-position: 66% 100%;
+}
+.personalInfo {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: #eef5ff;
+}
+.personalInfo .h2 {
+    font-size: 37px;
+    color: #07345d;
+}
+.personalInfo .hr {
+    background-color: rgba(7, 52, 93, 0.14);
+    height: 1px;
+}
+.personalInfo .img {
+    width: 100%;
+    border-radius: 10px;
 }
