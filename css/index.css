@@ -34,16 +34,17 @@
 }
 
 .header-nav .menu-items {
-  display: flex;
+  display: none;
   justify-content: space-around;
-
-  flex-direction: row;
+  
+  
   cursor: pointer;
   font-size: 15px;
   text-decoration: none;
 }
 
 .header-nav .menu-items a {
+  display: block;
   text-decoration: none;
   color: var(--main-color);
   font-family: "Lato", sans-serif;
@@ -185,4 +186,34 @@ a {
 }
 li {
   color: #07345d;
+}
+/*burger menu*/
+.burger-icon {
+  font-size: 2rem;
+}
+.burger-icon:hover {
+  cursor: pointer;
+}
+
+#burger-checkbox {
+  display: none;
+}
+.header-nav input:checked ~ .menu-items {
+  display: block;
+}
+@media (min-width: 769px) {
+
+  .burger-icon {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  #burger-checkbox ~ .menu-items {
+    display: flex;
+  }
+
 }
