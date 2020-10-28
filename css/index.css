@@ -10,6 +10,8 @@
 
 :root {
   --main-color: black; /*загальний колір*/
+  max-width: 1200px;
+  margin: 0 auto;
 }
 /* .logo {
     display: flex;
@@ -34,9 +36,9 @@
 }
 
 .header-nav .menu-items {
-  display: none;
+  /* display: flex; */
   justify-content: space-around;
-  
+  /* display: none; */
   
   cursor: pointer;
   font-size: 15px;
@@ -53,7 +55,7 @@
 }
 .header-nav .menu-items a:hover {
   border: 2px solid;
-  border-bottom-color: yellow;
+  
 }
 .block {
   padding-top: 80px;
@@ -82,7 +84,10 @@
   padding-right: 40px;
   padding-left: 40px;
   background-color: #eef5ff;
-}
+  position: relative;
+  /*display: block; */
+ }
+
 .personalInfo .h2 {
   font-size: 37px;
   color: #07345d;
@@ -196,12 +201,13 @@ li {
 }
 
 #burger-checkbox {
-  display: none;
+  /* display: none; */
 }
 .header-nav input:checked ~ .menu-items {
   display: block;
-}
-@media (min-width: 769px) {
+} 
+
+ @media (min-width: 769px) {
 
   .burger-icon {
     display: none;
@@ -216,4 +222,4 @@ li {
     display: flex;
   }
 
-}
+} 
